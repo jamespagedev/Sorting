@@ -41,3 +41,8 @@ def bubble_sort(arr):
 def count_sort(arr, maximum=-1):
 
     return arr
+
+
+def insertion_sort(arr):
+
+    return arr
