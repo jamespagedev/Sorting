@@ -72,6 +72,8 @@ def timsort(arr):
 
     return arr
 
+# STRETCH: quick_sort is another popular sort that I didn't see in this repo... so I'm adding it
+
 
 def quick_sort(arr):
 
