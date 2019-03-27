@@ -36,8 +36,6 @@ def merge(left, right):
     return result
 
 # TO-DO: implement the Merge Sort function below USING RECURSION
-
-
 def merge_sort(arr):
     # edge case
     if len(arr) < 2:
