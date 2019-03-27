@@ -20,7 +20,8 @@ def selection_sort(arr):
                 smallest_index = j
 
         # TO-DO: swap
-        arr = swap_arr_elements(arr, smallest_index, cur_index)
+        if cur_index != smallest_index:
+            arr = swap_arr_elements(arr, smallest_index, cur_index)
 
     return arr
 
