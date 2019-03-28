@@ -1,7 +1,8 @@
 import unittest
+import random
 from searching import *
 from iterative_sorting import *
-from recursive_sorting import merge_sort, merge_sort_in_place, quick_sort
+from recursive_sorting import merge_sort, merge_sort_in_place, quick_sort, tim_sort
 
 
 class SortingTest(unittest.TestCase):
@@ -64,11 +65,13 @@ class SortingTest(unittest.TestCase):
         arr2 = []
         arr3 = [2]
         arr4 = [0, 1, 2, 3, 4, 5]
+        arr5 = random.sample(range(200), 50)
 
         self.assertEqual(merge_sort(arr1), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
         self.assertEqual(merge_sort(arr2), [])
         self.assertEqual(merge_sort(arr3), [2])
         self.assertEqual(merge_sort(arr4), [0, 1, 2, 3, 4, 5])
+        self.assertEqual(merge_sort(arr5), sorted(arr5))
 
         # def test_merge_in_place(self):
         #     arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
@@ -80,7 +83,18 @@ class SortingTest(unittest.TestCase):
         #     self.assertEqual(merge_sort_in_place(arr2, 0, len(arr2)-1), [])
         #     self.assertEqual(merge_sort_in_place(arr3, 0, len(arr3)-1), [2])
         #     self.assertEqual(merge_sort_in_place(arr4, 0, len(arr4)-1), [0,1,2,3,4,5])
-        pass
+    def test_tim(self):
+        arr1 = [1, 5, 8, 4, 2, 9, 6, 0, 3, 7]
+        arr2 = []
+        arr3 = [2]
+        arr4 = [0, 1, 2, 3, 4, 5]
+        arr5 = random.sample(range(200), 50)
+
+        self.assertEqual(tim_sort(arr1, len(arr1)), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+        self.assertEqual(tim_sort(arr2, len(arr2)), [])
+        self.assertEqual(tim_sort(arr3, len(arr3)), [2])
+        self.assertEqual(tim_sort(arr4, len(arr4)), [0, 1, 2, 3, 4, 5])
+        self.assertEqual(tim_sort(arr5, len(arr5)), sorted(arr5))
 
 
 if __name__ == '__main__':

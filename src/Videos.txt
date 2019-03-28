@@ -6,3 +6,4 @@ https://www.youtube.com/watch?v=mLkRFBiDDaI
 Thursday Pre-Class Videos:
 https://www.youtube.com/watch?v=n59qpp0SNDo
 https://www.youtube.com/watch?v=RaNLB4XOOIs - merge sort
+https://www.youtube.com/watch?v=Hoixgm4-P4M - quick sort
